@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+
+main {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 350px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #4facfe;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#probar {
+    background-color: #4facfe;
+    color: white;
+}
+
+#probar:hover {
+    background-color: #3793e0;
+}
+
+#reiniciar {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#reiniciar:hover {
+    background-color: #e63d3d;
+}
+
+#mensaje {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Estado ganador */
+.ganaste {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Estado incorrecto */
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+#intentos {
+    font-weight: bold;
+    margin-top: 10px;
+}
